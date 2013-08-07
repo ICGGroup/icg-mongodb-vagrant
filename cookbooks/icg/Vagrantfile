@@ -1,0 +1,28 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.hostname = "icg-labs-berkshelf"
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64_vmware.box"
+
+  config.vm.synced_folder "../data/.ssh", "/vagrant_data"
+  config.vm.synced_folder "../data/project/app", "/home/vagrant/MGM-Foundation/src/web-client/app"
+  config.vm.synced_folder "../data/project/test", "/home/vagrant/MGM-Foundation/src/web-client/test"
+  config.vm.synced_folder "../data/project/views", "/home/vagrant/MGM-Foundation/src/web-client/views"
+
+  config.vm.network :public_network
+  config.vm.network :forwarded_port, guest: 8080, host: 8080
+
+  config.ssh.max_tries = 40
+  config.ssh.timeout   = 120
+
+  config.berkshelf.enabled = true
+
+  config.vm.provision :chef_solo do |chef|
+    chef.run_list = [
+        "recipe[icg-labs::default]"
+    ]
+  end
+end

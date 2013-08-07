@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'Defaults:ec2-user !requiretty' > /etc/sudoers.d/888-vagrant-cloud-init-requiretty
+sudo true && curl -L https://www.opscode.com/chef/install.sh | sudo bash
+

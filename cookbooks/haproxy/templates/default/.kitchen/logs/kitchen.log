@@ -1,0 +1,26 @@
+I, [2013-05-25T02:31:38.818969 #39637]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0.alpha.7)
+E, [2013-05-25T02:31:38.819409 #39637] ERROR -- Kitchen: ------Exception-------
+E, [2013-05-25T02:31:38.819482 #39637] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2013-05-25T02:31:38.819537 #39637] ERROR -- Kitchen: Message: Kitchen YAML file /Users/jtimberman/Development/opscode/cookbooks/haproxy/templates/default/.kitchen.yml does not exist.
+E, [2013-05-25T02:31:38.819583 #39637] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-05-25T02:31:38.819637 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/loader/yaml.rb:59:in `read'
+E, [2013-05-25T02:31:38.819681 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/config.rb:190:in `data'
+E, [2013-05-25T02:31:38.819724 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/config.rb:70:in `suites'
+E, [2013-05-25T02:31:38.819768 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/config.rb:117:in `build_instances'
+E, [2013-05-25T02:31:38.819812 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/config.rb:76:in `instances'
+E, [2013-05-25T02:31:38.819865 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/cli.rb:311:in `get_filtered_instances'
+E, [2013-05-25T02:31:38.819911 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/cli.rb:290:in `parse_subcommand'
+E, [2013-05-25T02:31:38.819955 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/cli.rb:108:in `block in test'
+E, [2013-05-25T02:31:38.820000 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-05-25T02:31:38.820044 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/cli.rb:104:in `test'
+E, [2013-05-25T02:31:38.820088 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-05-25T02:31:38.820133 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-05-25T02:31:38.820177 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/cli.rb:255:in `invoke_task'
+E, [2013-05-25T02:31:38.820221 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-05-25T02:31:38.820266 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-05-25T02:31:38.820314 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-05-25T02:31:38.820359 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/lib/kitchen/errors.rb:78:in `with_friendly_errors'
+E, [2013-05-25T02:31:38.820403 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/test-kitchen-1.0.0.alpha.7/bin/kitchen:13:in `<top (required)>'
+E, [2013-05-25T02:31:38.820447 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/bin/kitchen:23:in `load'
+E, [2013-05-25T02:31:38.820491 #39637] ERROR -- Kitchen: /Users/jtimberman/.rbenv/versions/1.9.3-p392/bin/kitchen:23:in `<main>'
+E, [2013-05-25T02:31:38.820544 #39637] ERROR -- Kitchen: ----------------------
